@@ -1,0 +1,17 @@
+@import '../../bower_components/normalize.css/normalize';
+// base
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/typo";
+@import "base/fonts";
+
+// vendor css
+@import "vendor/vendor";
+// @import "vendor/bootstrap-greed";
+
+// Your css
+@import "layout/style";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";

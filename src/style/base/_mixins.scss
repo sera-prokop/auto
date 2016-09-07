@@ -1,0 +1,171 @@
+
+@mixin clearfix {
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:bothfont:0/0 serif");
+  *zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin inlineblock {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@mixin box-shadow($string) {
+  -webkit-box-shadow: $string;
+  -moz-box-shadow: $string;
+  box-shadow: $string;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin opacity($opacity: 1) {
+  $ieOpacity: $opacity * 100;
+  filter: "alpha(opacity=$ieOpacity)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ieOpacity)";
+  opacity: $opacity;
+}
+
+
+@mixin placecolor($color: black) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+// translate3d
+@mixin translate ($x, $y, $z) {
+   @include transform(translate3d($x, $y, $z));
+}
+
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+// 1600
+@mixin desktop-big {
+  @media only screen and (max-width: 100em) {
+    @content;
+  }
+}
+
+// 1240
+@mixin desktop {
+  @media only screen and (max-width: 77em) {
+    @content;
+  }
+}
+
+// 1040
+@mixin tablets {
+  @media only screen and (max-width: 65em) {
+    @content;
+  }
+}
+
+// 904
+@mixin small-tablets-h {
+  @media only screen and (max-width: 56.5em) {
+    @content;
+  }
+}
+// 804
+@mixin small-tablets {
+  @media only screen and (max-width: 50em) {
+    @content;
+  }
+}
+
+// 600
+@mixin mobile {
+  @media only screen and (max-width: 37.5em) {
+    @content;
+  }
+}
+// 360
+@mixin mobile-s {
+  @media only screen and (max-width: 22.5em) {
+    @content;
+  }
+}
+
+// Используй это, если нужна индивидуальная ширина. Или лучше всегда эту использовать.
+@mixin breakpoint($width){
+  @media only screen and (max-width: ($width / 16) + em) {
+    @content;
+  } 
+}

@@ -1,0 +1,188 @@
+.header-top{
+  line-height: 8.4375em;
+  @include clearfix;
+  &__logo{
+    float: left;
+    width: 280px;
+    text-align: center;
+  }
+  &__menu{
+    float: left;
+    width: 650px;
+  }
+  &__tel{
+    float: right;
+    max-width: 300px;
+    line-height: 1;
+    padding: 0 50px;
+  }
+}
+
+.logo{
+  font-family: $fira-bold;
+    font-size: 3.125em;//50
+    text-transform: lowercase;
+    color: $orange;
+    span{
+      color: $black;
+    }
+}
+
+.menu{
+  &__list{
+    @include clearfix;
+    margin-left: 10px;
+  }
+  &__item{
+    float: left;
+    margin-right: 45px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    // font-family: $fira-regular;
+    font-size: 1.25em;
+  }
+}
+
+.call{
+  height: 8.4375em;
+  display: table;
+  &__wrapper{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__link{
+    font-size: 1.5em;
+    padding-left: 30px;
+    position: relative;
+    &:before{
+      content: "";
+      background-image: url(/images/tel.svg);
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+  }
+  }
+  &__button{
+    display: block;
+    margin: 17px 0 0;
+    float: right;
+    padding: 14px 18px;
+    font-size: 0.875em;
+    color: $white;
+    text-transform: uppercase;
+    background: #ff5b21;
+    background: -moz-linear-gradient(left,  #ff5b21 0%, #fe9b1c 100%);
+    background: -webkit-linear-gradient(left,  #ff5b21 0%,#fe9b1c 100%);
+    background: linear-gradient(to right,  #ff5b21 0%,#fe9b1c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5b21', endColorstr='#fe9b1c',GradientType=1 );
+    border-radius: 5px;
+  }
+}
+
+.header-slider{
+  background-image: url(/images/slide-1.1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 640px;
+  position: relative;
+  h1{
+    font-size: 6.25em;
+    font-family: $bebas-ru;
+    color: $white;
+    width: 800px;
+    padding-left: 290px;
+    padding-top: 115px;
+  }
+  span{
+    font-size: 0.7em;
+    margin-left: 35px;
+    vertical-align: middle;
+  }
+  &__toggle{
+    margin-left: 290px;
+  }
+  &__dotted{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+    &--active{
+      background-color: $orange;
+    }
+  }
+  &__form{
+    position: absolute;
+    top: 90px;
+    right: 315px;
+  }
+}
+
+.form-vertical{
+  background-color: $white;
+  width: 440px;
+  border-radius: 5px;
+  padding: 40px;
+  &__title{
+    font-family: $fira-bold;
+    font-size: 1.875em;
+    margin-bottom: 30px;
+  }
+  label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.875em;
+    color: $orange-three;
+  }
+  input{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #eceef1;
+    border-radius: 5px;
+    outline: none;
+  }
+  input.form-vertical__input{
+    width: 80%;
+    border-left: none;
+
+  }
+  select{
+    appearance: none;
+    -ms-appearance: none;
+    width: 20%;
+    padding: 15px 0 15px 15px;
+    border-right: none;
+    font-size: 0.875em;
+    font-family: $fira-regular;
+    outline: none;
+    margin-right: -7px;
+    color: $black;
+    border: 1px solid #eceef1;
+  }
+  select::-ms-expand {
+  display: none;
+  }
+  &__btn{
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.875em;
+    color: $white;
+    text-transform: uppercase;
+    background: #ff5b21;
+    background: -moz-linear-gradient(left,  #ff5b21 0%, #fe9b1c 100%);
+    background: -webkit-linear-gradient(left,  #ff5b21 0%,#fe9b1c 100%);
+    background: linear-gradient(to right,  #ff5b21 0%,#fe9b1c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5b21', endColorstr='#fe9b1c',GradientType=1 );
+    border-radius: 5px;
+  }
+}

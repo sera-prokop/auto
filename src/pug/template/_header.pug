@@ -1,0 +1,42 @@
+header
+  section.header-top
+    .header-top__logo.logo Auto
+      span usa
+    nav.header-top__menu.menu
+      ul.menu__list
+        li.menu__item
+          a.menu__link(href="javascript:;") Как мы работаем
+        li.menu__item
+          a.menu__link(href="javascript:;") Наши преимущества
+        li.menu__item
+          a.menu__link(href="javascript:;") Оставить заявку
+    .header-top__tel.call.call--header
+      .call__wrapper
+        a.call__link(href="tel:88007779900") 8 800 777 99 00
+        button.call__button(type="button") Перезвоните мне
+  section.header-slider
+    h1 Dodge
+      span от $14,735
+      br
+      | Durango
+      br
+      | 2013
+    .header-slider__toggle
+      .header-slider__dotted.header-slider__dotted--active
+      .header-slider__dotted
+      .header-slider__dotted
+    form(action="#" method="post").header-slider__form.form-vertical
+      h2.form-vertical__title Хочу машину
+      label.form-vertical__label(for="name") Имя
+      input(type="text" placeholder="Введите ваше имя" id="name")
+      label.form-vertical__label(for="phone") Телефон
+      <select id="country">
+        <option value="ua">+380</option>
+        <option value="ru">+7</option>
+        <option value="by">+375</option>
+      </select>
+      input.form-vertical__input(type="text" placeholder="Номер телефона" id="phone")
+      label.form-vertical__label(for="mail") Email
+      input(type="text" placeholder="Введите ваш e-mail" id="mail")
+      button.form-vertical__btn(type="submit") Отправить
+

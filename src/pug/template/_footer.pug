@@ -1,0 +1,18 @@
+footer.footer
+  form(action="#" method="post").footer__form.form-vertical
+      h2.form-vertical__title Хочу машину
+      label.form-vertical__label Имя
+        input(type="text" placeholder="Введите ваше имя")
+      label.form-vertical__label(for="phone") Телефон
+        <select id="country">
+          <option value="ua">+380</option>
+          <option value="ru">+7</option>
+          <option value="by">+375</option>
+        </select>
+        input(type="text" placeholder="Номер телефона" id="phone")
+      label.form-vertical__label Email
+        input(type="text" placeholder="Введите ваш e-mail")
+      button.form-vertical__btn(type="submit") Отправить
+  .footer__tel.call.call--footer
+    a(href="tel:88007779900") 8 800 777 99 00
+    button(type="button") Перезвоните мне
