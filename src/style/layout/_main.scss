@@ -67,6 +67,8 @@
   padding-top: 85px;
   padding-bottom: 200px;
   background: #f4f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
   &__title{
     font-family: $fira-bold;
     font-size: 3.75em;
@@ -84,16 +86,21 @@
       left: 30%;
     }
   }
+  &__slider{
+    margin: 0 auto;
+  }
 }
 
 .slider{
-  text-align: center;
-  position: relative;
+  // margin: 0 50px;
+  // text-align: center;
+  // position: relative;
   &__item{
+    text-align: center;
     display: inline-block;
     padding: 15px;
     background: $white;
-    max-width: 370px;
+    // max-width: 370px;
     img{
       text-align: center;
       margin-bottom: 20px;
@@ -139,25 +146,21 @@
     margin-left: 10px;
     line-height: 1.25;
   }
-  &__prev{
+  .swiper-button-prev{
     background: url(images/slider-prev.png) no-repeat;
-    position: absolute;
     height: 110px;
     width: 50px;
     top: 50%;
-    left: 50px;
+    left: -5px;
     transform: translateY(-50%);
-    cursor: pointer;
   }
-  &__next{
+  .swiper-button-next{
     background: url(images/slider-next.png) no-repeat;
-    position: absolute;
     height: 110px;
     width: 50px;
     top: 50%;
-    right: 50px;
+    right: 0px;
     transform: translateY(-50%);
-    cursor: pointer;
   }
 }
 

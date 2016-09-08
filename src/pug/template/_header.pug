@@ -14,10 +14,9 @@ header
       .call__wrapper
         a.call__link(href="tel:80671221627") 8 067 122 16 27
         button.call__button(type="button") Перезвоните мне
-  section.header-slider
-    .swiper-container
+  section.header-slider.swiper-container
       .swiper-wrapper
-        .swiper-slide
+        .swiper-slide(style="background: url(images/slide-1.1.jpg) 50% 50%; background-size: cover;")
           h1 Dodge
             span от $14,735
             br
@@ -25,9 +24,6 @@ header
             br
             | 2013
           .header-slider__toggle
-            .header-slider__dotted.header-slider__dotted--active
-            .header-slider__dotted
-            .header-slider__dotted
           form(action="#" method="post").header-slider__form.form-vertical
             h2.form-vertical__title Хочу машину
             label.form-vertical__label(for="name") Имя
@@ -42,17 +38,14 @@ header
             label.form-vertical__label(for="mail") Email
             input(type="text" placeholder="Введите ваш e-mail" id="mail")
             button.form-vertical__btn(type="submit") Отправить
-        .swiper-slide
+        .swiper-slide(style="background: url(images/slide-1.1.jpg) 50% 50%; background-size: cover;")
           h1 Dodge
             span от $14,735
             br
             | Durango
             br
             | 2013
-          .header-slider__toggle.swiper-pagination
-            .header-slider__dotted.header-slider__dotted--active
-            .header-slider__dotted
-            .header-slider__dotted
+          .header-slider__toggle
           form(action="#" method="post").header-slider__form.form-vertical
             h2.form-vertical__title Хочу машину
             label.form-vertical__label(for="name") Имя

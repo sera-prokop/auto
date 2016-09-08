@@ -86,11 +86,14 @@
 }
 
 .header-slider{
-  background: url(images/slide-1.1.jpg) 50% 50%;
+  // background: url(images/slide-1.1.jpg) 50% 50%;
   background-size: cover;
   height: 640px;
   position: relative;
   z-index: 10;
+  .swiper-slide{
+    background-size: 50% 50%;
+  }
   h1{
     font-size: 6.25em;
     font-family: $bebas-ru;
@@ -98,16 +101,16 @@
     width: 800px;
     padding-left: 290px;
     padding-top: 115px;
-  }
-  span{
-    font-size: 0.7em;
-    margin-left: 35px;
-    vertical-align: middle;
+    span{
+      font-size: 0.7em;
+      margin-left: 35px;
+      vertical-align: middle;
+    }
   }
   &__toggle{
     margin-left: 290px;
   }
-  &__dotted{
+  .swiper-pagination-bullet{
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -115,9 +118,10 @@
     display: inline-block;
     margin-right: 25px;
     cursor: pointer;
-    &--active{
-      background-color: $orange;
-    }
+
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $orange;
   }
   &__form{
     position: absolute;
