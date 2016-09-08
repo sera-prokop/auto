@@ -1,0 +1,407 @@
+@media screen and (max-width: 1600px){
+  .menu__item{
+    margin-right: 20px;
+  }
+  .header-slider__form{
+    right: 90px;
+  }
+  .header-slider h1{
+    padding-left: 100px;
+  }
+  .header-slider__toggle{
+    margin-left: 100px;
+  }
+  .call--footer .call__link{
+    font-size: 3em;
+  }
+  .cost__title{
+    padding-left: 10%;
+  }
+  .cost__images{
+    width: 45%;
+  }
+  .cost__value{
+    font-size: 1.5em;
+  }
+  .working__descr{
+    padding-left: 10%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1380px){
+  .header-top__menu{
+    width: 565px;
+  }
+  .header-top__tel{
+    padding: 0 30px 0 0;
+    max-width: 220px;
+  }
+  .call__wrapper{
+    text-align: right;
+  }
+  .header-top__logo{
+    width: 225px;
+  }
+  .header-slider__form{
+    right: 50px;
+  }
+  .header-slider h1{
+    padding-left: 50px;
+  }
+  .header-slider__toggle{
+    margin-left: 50px;
+  }
+  .cost__value--two{
+    &:before{
+      background-image: none;
+    }
+    left: 370px;
+    top: 200px;
+  }
+  .cost__value--one{
+    &:before{
+      background-image: none;
+    }
+    top: 200px;
+  }
+  .pros{
+    padding-left: 10%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1023px){
+
+  .header-top__logo, .header-top__menu, .header-top__tel{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .header-top__logo{
+    //text-align: left;
+    //margin-left: 40px;
+    line-height: 1.5;
+  }
+  .menu__list{
+    line-height: 3;
+  }
+  .menu__item{
+    text-align: center;
+    width: 31%;
+    display: block;
+  }
+  .call__button{
+    float: none;
+    margin: 20px auto;
+  }
+  .header-slider{
+    //height: auto;
+    h1{
+      //padding: 50px 10px 10px 10px;
+      //width: 100%;
+      font-size: 4.5em;
+    }
+  }
+  .header-slider__toggle{
+    margin: 20px 0 25px 50px;
+  }
+  .header-slider__form{
+    width: 40%;
+    //position: static;
+    border-radius: 0;
+  }
+  .call__wrapper{
+    text-align: center;
+  }
+  .cost{
+    padding: 20px;
+    background-image: none;
+  }
+  .cost__wrapper{
+    text-align: center;
+  }
+  .cost__title, .offers__title, .working__title, .pros__title{
+    float: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    &:before{
+      background-image: none;
+      height: 0;
+    }
+  }
+  .cost__images{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cost__value{
+    position: static;
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 30px;
+    &:before{
+      background-image: none;
+    }
+  }
+  .offers{
+    padding: 20px;
+  }
+  .slider__item{
+    h3{
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+  }
+  .slider__prev{
+    left: -15px;
+  }
+  .slider__next{
+    right: -15px;
+  }
+  .slider__intro{
+    margin-left: 5px;
+  }
+  .working{
+    padding: 20px;
+  }
+  .working__form{
+    display: none;
+  }
+  .working__descr{
+    padding: 0;
+  }
+  .steps__number{
+    font-size: 2em;
+  }
+  .steps__item{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    &:nth-child(odd):after{
+      background-image: none;
+    }
+    &:nth-child(odd){
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+  .steps__text{
+    font-size: 0.8em;
+  }
+  .pros{
+    padding: 20px;
+  }
+  .pros__item{
+    display: block;
+    width: 100%;
+  }
+  .pros__item--last{
+    float: none;
+  }
+  .footer{
+    padding: 20px;
+  }
+  .footer__form{
+    width: 50%;
+    position: static;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+  .footer__tel{
+    margin: 0;
+  }
+  .call--footer{
+    display: block;
+    .call__wrapper{
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .call__link{
+      padding-left: 30px;
+      font-size: 1.5em;
+      display: inline-block;
+      &:before{
+        background-image: url(images/tel.svg);
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .call__button{
+      float: none;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px){
+  .header-top__logo, .header-top__menu, .header-top__tel{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .menu__list{
+    line-height: 3;
+  }
+  .menu__item{
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .call__button{
+    float: none;
+    margin: 20px auto;
+  }
+  .header-slider{
+    height: auto;
+    h1{
+      padding: 50px 10px 10px 10px;
+      width: 100%;
+      font-size: 4em;
+    }
+  }
+  .header-slider__toggle{
+    margin: 0 0 25px 10px;
+  }
+  .header-slider__form{
+    width: 100%;
+    position: static;
+    border-radius: 0;
+  }
+  .call__wrapper{
+    text-align: center;
+  }
+  .cost{
+    padding: 20px;
+    background-image: none;
+  }
+  .cost__wrapper{
+    text-align: center;
+  }
+  .cost__title, .offers__title, .working__title, .pros__title{
+    float: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    &:before{
+      background-image: none;
+      height: 0;
+    }
+  }
+  .cost__images{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cost__value{
+    position: static;
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 30px;
+    &:before{
+      background-image: none;
+    }
+  }
+  .offers{
+    padding: 20px;
+  }
+  .slider__item{
+    h3{
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+  }
+  .slider__prev{
+    left: -15px;
+  }
+  .slider__next{
+    right: -15px;
+  }
+  .slider__intro{
+    margin-left: 5px;
+  }
+  .working{
+    padding: 20px;
+  }
+  .working__form{
+    display: none;
+  }
+  .working__descr{
+    padding: 0;
+  }
+  .steps__number{
+    font-size: 2em;
+  }
+  .steps__item{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    &:nth-child(odd):after{
+      background-image: none;
+    }
+    &:nth-child(odd){
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+  .steps__text{
+    font-size: 0.8em;
+  }
+  .pros{
+    padding: 20px;
+  }
+  .pros__item{
+    display: block;
+    width: 100%;
+  }
+  .footer{
+    padding: 20px;
+  }
+  .footer__form{
+    width: 100%;
+    position: static;
+    border-radius: 0;
+    margin: 0;
+  }
+  .footer__tel{
+    margin: 0;
+  }
+  .call--footer{
+    display: block;
+    .call__wrapper{
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .call__link{
+      padding-left: 30px;
+      font-size: 1.5em;
+      display: inline-block;
+      &:before{
+        background-image: url(images/tel.svg);
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .call__button{
+      float: none;
+    }
+  }
+}

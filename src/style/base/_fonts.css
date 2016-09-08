@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'bebasregular';
-    src: url('/fonts/bebas-webfont.woff2') format('woff2'),
-         url('/fonts/bebas-webfont.woff') format('woff');
+    src: url('fonts/bebas-webfont.woff2') format('woff2'),
+         url('fonts/bebas-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'fira_sansbold';
-    src: url('/fonts/firasans-bold-webfont.woff2') format('woff2'),
-         url('/fonts/firasans-bold-webfont.woff') format('woff');
+    src: url('fonts/firasans-bold-webfont.woff2') format('woff2'),
+         url('fonts/firasans-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'fira_sansmedium';
-    src: url('/fonts/firasans-medium-webfont.woff2') format('woff2'),
-         url('/fonts/firasans-medium-webfont.woff') format('woff');
+    src: url('fonts/firasans-medium-webfont.woff2') format('woff2'),
+         url('fonts/firasans-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'fira_sansregular';
-    src: url('/fonts/firasans-regular-webfont.woff2') format('woff2'),
-         url('/fonts/firasans-regular-webfont.woff') format('woff');
+    src: url('fonts/firasans-regular-webfont.woff2') format('woff2'),
+         url('fonts/firasans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -46,8 +46,8 @@
 
 @font-face {
     font-family: 'bebas_neueregular';
-    src: url('/fonts/bebasneue_regular-webfont.woff2') format('woff2'),
-         url('/fonts/bebasneue_regular-webfont.woff') format('woff');
+    src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

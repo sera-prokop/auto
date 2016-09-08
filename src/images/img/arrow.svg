@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.719" height="48" viewBox="0 0 12.719 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222426;
+        fill-rule: evenodd;
+        opacity: 0.5;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="916.281" y="3324" width="12.719" height="48" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="lighten" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Многоугольник_1_копия_5" data-name="Многоугольник 1 копия 5" class="cls-1" d="M929,3348.01l-12.726,24v-48Zm-2.272,0-12.726,24v-48Z" transform="translate(-916.281 -3324)"/>
+</svg>

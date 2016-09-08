@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe7c1e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_копия_3" data-name="icon копия 3" class="cls-1" d="M412.015,2071.04a1,1,0,1,0-2,0v3.98h-3.01v-3.98a1,1,0,1,0-2,0v3.98H402v-3.98a1,1,0,1,0-2,0v4.6a1.288,1.288,0,0,0,1.16,1.49h3.849v3.81a1,1,0,1,0,2,0v-3.81h3.01v3.81a1,1,0,1,0,2,0v-9.9Z" transform="translate(-400 -2070)"/>
+</svg>

@@ -51,7 +51,7 @@ var path = {
       html: 'dev/',
       js: 'dev/js/',
       js_vendor: 'dev/js/vendor/',
-      css: 'dev/css/',
+      css: 'dev/',
       img: 'dev/images/',
       favicon: 'dev/favicon/',
       fonts: 'dev/fonts/'
@@ -183,12 +183,12 @@ gulp.task('style:dev', function () {
         }))
       }))
     .pipe(sass())
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(prefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.dev.css))
     .pipe(reload({stream: true}));
 });

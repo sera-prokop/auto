@@ -1,42 +1,48 @@
 main
   section.cost
-    h2.cost__title Зачем
-      br
-      | платить
-      br
-      | больше?
-    img(src="/images/auto.jpg")
-    .cost__value в США от
-      span $13,487
-    .cost__value в Украине от
-      span $38,900
+    .cost__wrapper
+      h2.cost__title Зачем
+        br
+        | платить
+        br
+        | больше?
+      .cost__images
+        .cost__value.cost__value--one в США от
+          span $13,487
+        .cost__value.cost__value--two в Украине от
+          span $38,900
+        img(src="/images/auto.png")
   section.offers
-    h2.offers__title Актуальные предложения
+    h2.offers__title Актуальные
+     br
+     | предложения
     .offers__slider.slider
-      img(src="/images/slide-2.1.jpg")
-      h3 Dodge Durango 2013
-        span $20,950
-      div Автомат
-      div Кондей
-      div Кожа
-      p Не бит, не крашен, один хозяин, ездила белка
-    .slider__prev <
-    .slider__next >
+      .slider__item
+        img(src="/images/slide-2.1.jpg")
+        h3 Dodge Durango 2013
+          span $20,950
+        div.slider__intro.slider__intro--one Автомат
+        div.slider__intro.slider__intro--two Кондей
+        div.slider__intro.slider__intro--three Кожа
+        p Не бит, не крашен, один хозяин, ездила белка
+      .slider__prev
+      .slider__next
   section.working
     form(action="#" method="post").working__form.form-horizontal
       h2.form-horizontal__title Хочу машину
-      label.form-horizontal__label Имя
-        input(type="text" placeholder="Введите ваше имя")
-      label.form-horizontal__label(for="phone") Телефон
+      .form-horizontal__item
+        label.form-horizontal__label(for="name") Имя
+        input(type="text" placeholder="Введите ваше имя" id="name")
+      .form-horizontal__item
+        label.form-horizontal__label(for="phone") Телефон
         <select id="country">
-          <option value="ua">+380</option>
-          <option value="ru">+7</option>
-          <option value="by">+375</option>
+        <option value="ua">+380</option>
+        <option value="ru">+7</option>
+        <option value="by">+375</option>
         </select>
-        input(type="text" placeholder="Номер телефона" id="phone")
-      label.form-horizontal__label Email
-        input(type="text" placeholder="Введите ваш e-mail")
-      button.btn(type="submit") Отправить
+        input.form-horizontal__input(type="text" placeholder="Номер телефона" id="phone")
+      .form-horizontal__item
+        button.form-horizontal__btn(type="submit") Отправить
     h2.working__title Как мы работаем?
     nav.working__descr.steps
       -
@@ -56,8 +62,9 @@ main
           'Таможенное оформление и оплата пошлин на транспортное средство': '13',
           'Передача клиенту транспортного средства и документов на него': '14'
         }
-      each key, item in steps
-        ul.steps__list
+
+      ul.steps__list
+        each key, item in steps
           li.steps__item
             .steps__number #{key}
             .steps__text #{item}
@@ -65,25 +72,25 @@ main
     h2.pros__title Наши преимущества
     .pros__item.plus
       .plus__image
-        img(src="")
+        img(src="/images/plus-1.png")
         span 01
       h2.plus__title Официально и в указанные сроки!
       .plus__text Весь процес декларирования и оформления экспорта из США происходит в заявленные сроки. Мы предоставляем фотоотчёт на складе в порту перед погрузкой в контейнер.
     .pros__item.plus
       .plus__image
-        img(src="")
+        img(src="/images/plus-2.png")
         span 02
       h2.plus__title Для чего оставляется залог?
       .plus__text По условиям интерет-аукционов, для допуска к онлайн-торгам необходимо внесение депозитного залога в размере 10% от наивысшей предполагаемой ставки, что подтверждает серьёзность намерений участников аукциона и является гарантией оплаты выигранного лота.
     .pros__item.plus
       .plus__image
-        img(src="")
+        img(src="/images/plus-3.png")
         span 03
       h2.plus__title На сколько описание лота соответствует реальности?
       .plus__text Стоимость автомобиля и сумма восстановления автоматически вносится при указании марки, модели и года выпуска (не учитывая комплектацию и силу ущерба), а данные по состоянию, повреждениям, техническим характеристикам лота и фотоотчёт вносит аккредитованный специалист аукциона.
-    .pros__item.plus
+    .pros__item.pros__item--last.plus
       .plus__image
-        img(src="")
+        img(src="/images/plus-4.png")
         span 04
       h2.plus__title Легальность авто в Украине
       .plus__text Помимо проверки истории автомобилей по его вин-коду до размещения объявлений на своих ресурсах, аукционы максимально страхуют себя от рисков, стараясь сотрудничать исключительно со страховыми компаниями, которые дают стабильный поток автомобилей.

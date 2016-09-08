@@ -59,7 +59,7 @@
     position: relative;
     &:before{
       content: "";
-      background-image: url(/images/tel.svg);
+      background-image: url(images/tel.svg);
       position: absolute;
       width: 18px;
       height: 18px;
@@ -86,11 +86,11 @@
 }
 
 .header-slider{
-  background-image: url(/images/slide-1.1.jpg);
+  background: url(images/slide-1.1.jpg) 50% 50%;
   background-size: cover;
-  background-position: 50% 50%;
   height: 640px;
   position: relative;
+  z-index: 10;
   h1{
     font-size: 6.25em;
     font-family: $bebas-ru;
@@ -131,6 +131,7 @@
   width: 440px;
   border-radius: 5px;
   padding: 40px;
+  border: 1px solid #f2f2f2;
   &__title{
     font-family: $fira-bold;
     font-size: 1.875em;
@@ -149,17 +150,24 @@
     border: 1px solid #eceef1;
     border-radius: 5px;
     outline: none;
+    height: 50px;
   }
   input.form-vertical__input{
     width: 80%;
     border-left: none;
+    height: 50px;
 
   }
   select{
     appearance: none;
     -ms-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
     width: 20%;
-    padding: 15px 0 15px 15px;
+    height: 50px;
+    padding-left: 15px;
+    background:  url(images/select.png) 95% 50% no-repeat;
+    //padding: 13px 0 13px 15px;
     border-right: none;
     font-size: 0.875em;
     font-family: $fira-regular;
